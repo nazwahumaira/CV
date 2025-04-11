@@ -1,0 +1,175 @@
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f7aaba;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    min-width: 800px; 
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background-color: #f7aaba;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; 
+}
+
+.education {
+    width: 88%;
+}
+
+.edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.institution {
+    font-weight: bold;
+}
+
+.major {
+    font-size: 0.9em;
+    color: gray;
+    font-style: italic;
+}
+
+/* Main Content */
+.content {
+    width: 70%;
+    flex-grow: 1; 
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: normal;
+}
+
+.position {
+    color: gray;
+    font-style: italic;
+    font-size: 0.95em;
+}
+
+.tasks {
+    padding-left: 20px;
+    list-style-type: disc;
+    margin-top: 5px;
+}
+
+.tasks li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.achievement-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    color: #777;
+    font-size: 0.9em;
+}
+
+h2 {
+    color: #d6336c;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+a {
+    color: #e94e77;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #c12d5d;
+    text-decoration: underline;
+}
+
+figure {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.profile-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    clear: both;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        min-width: unset;
+        flex-wrap: wrap; 
+    }
+
+    .sidebar {
+        width: 35%;
+    }
+
+    .content {
+        width: 60%;
+    }
+}
